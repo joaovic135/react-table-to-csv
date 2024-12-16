@@ -9,6 +9,7 @@ import {
   flexRender
 } from '@tanstack/react-table';
 import Papa from 'papaparse'
+import { createCsvExporter } from '@/utils/tablet-csv';
 
 type User = {
   id: number;
@@ -68,27 +69,13 @@ export default function PapaParseCsvExport() {
     getPaginationRowModel: getPaginationRowModel(),
   });
 
-  const exportToCsv = () => {
- // Exporta TODOS os dados, não apenas a página atual
-    const csv = Papa.unparse(data, {
-      quotes: true, // Coloca aspas em strings
-      delimiter: ",", // Separador de colunas
-    });
-
-    // Cria um Blob para download
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'usuarios-papaparse.csv';
-    link.click();
-  }
 
   return (
     <div className="p-4">
       <h1 className="text-2xl mb-4">Tabela de Usuários - Papa Parse CSV Export</h1>
       
       <button 
-        onClick={exportToCsv}
+        onClick={createCsvExporter(data)}
         className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
       >
         Exportar CSV (Papa Parse)
