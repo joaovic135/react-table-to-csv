@@ -1,5 +1,3 @@
-
-```markdown
 # Table to CSV Converter
 
 A Next.js application that demonstrates different methods to export table data to CSV format.
@@ -16,13 +14,28 @@ A Next.js application that demonstrates different methods to export table data t
 
 ## Getting Started
 
-First, install the dependencies:
+### Prerequisites
+
+Ensure you have Node.js and npm installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/your-username/table-to-csv.git
+cd table-to-csv
+```
+
+Then, install the dependencies:
 
 ```bash
 npm install
 ```
 
-Then, run the development server:
+### Running the Development Server
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -32,19 +45,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 
-- 
-
-app
-
- - Main application code
+- `app/` - Main application code
   - `papaparse/` - PapaParse implementation
   - `react-csv/` - React-CSV implementation 
   - `both/` - Combined implementation
-  - 
-
-layout.tsx
-
- - Root layout with font configuration
+  - `layout.tsx` - Root layout with font configuration
 
 ## Technologies Used
 
@@ -56,8 +61,4 @@ layout.tsx
 
 ## License
 
-MIT License
-```
-
-This README provides a clear overview of your project's features, setup instructions, structure, and technologies used. Feel free to modify it based on additional features or requirements you may have.
-This README provides a clear overview of your project's features, setup instructions, structure, and technologies used. Feel free to modify it based on additional features or requirements you may have.
+This project is licensed under the MIT License.
