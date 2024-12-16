@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+```markdown
+# Table to CSV Converter
+
+A Next.js application that demonstrates different methods to export table data to CSV format.
+
+## Features
+
+- Convert table data to CSV using multiple approaches:
+  - PapaParse library
+  - React-CSV library
+  - Combined approach with both libraries
+- Modern UI with Tailwind CSS
+- Font optimization with Next.js font system
+- Responsive table design
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 
 
-## Learn More
+app
 
-To learn more about Next.js, take a look at the following resources:
+ - Main application code
+  - `papaparse/` - PapaParse implementation
+  - `react-csv/` - React-CSV implementation 
+  - `both/` - Combined implementation
+  - 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+layout.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ - Root layout with font configuration
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org) - React framework
+- [Tailwind CSS](https://tailwindcss.com) - Styling
+- [PapaParse](https://www.papaparse.com) - CSV parsing
+- [React-CSV](https://www.npmjs.com/package/react-csv) - React CSV export
+- [Geist Font](https://vercel.com/font) - Typography
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT License
+```
+
+This README provides a clear overview of your project's features, setup instructions, structure, and technologies used. Feel free to modify it based on additional features or requirements you may have.
+This README provides a clear overview of your project's features, setup instructions, structure, and technologies used. Feel free to modify it based on additional features or requirements you may have.

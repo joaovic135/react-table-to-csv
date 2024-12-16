@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "geekie"
+  ],
+  "extends":[
+    "plugin:geekie/recommended"
+  ]
+}
